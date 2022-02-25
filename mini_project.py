@@ -51,7 +51,7 @@ def information():
             else:
                 allaaseq[chain]=seq
 
-    translatedallseq={chain:''.join([amino_dictionary.get(chain) for chain in chain]) for amino,chain in allaaseq.items()}
+    translatedallseq={amino:''.join([amino_dictionary.get(chain) for chain in chain]) for amino,chain in allaaseq.items()}
 
     chainset=set(chains)
     chainlist=list(chainset)
