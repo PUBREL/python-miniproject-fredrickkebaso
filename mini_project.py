@@ -1,5 +1,4 @@
-#Python program to analyse pdf files
-
+#Python program to analyse pdb files
 
 def information():
     string=''
