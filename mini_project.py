@@ -1,4 +1,5 @@
-#Python program to analyse pdb files
+#Python program to analyse pdf files
+
 
 def information():
     string=''
@@ -50,7 +51,7 @@ def information():
             else:
                 allaaseq[chain]=seq
 
-    translatedallseq={k:''.join([amino_dictionary.get(v) for v in v]) for k,v in allaaseq.items()}
+    translatedallseq={chain:''.join([amino_dictionary.get(chain) for chain in chain]) for amino,chain in allaaseq.items()}
 
     chainset=set(chains)
     chainlist=list(chainset)
